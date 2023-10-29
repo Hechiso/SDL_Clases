@@ -1,0 +1,49 @@
+---------------------------------------------------   mapa procedural 
+
+
+medidas del mapa
+
+ancho = 1366 pixeles o casillas
+alto = 768 pixeles o casillas
+ 
+
+medidas de un chunk 
+64 X 64
+
+--------------------------------------------------  estructuras
+
+// Definir una estructura de datos para un mapa
+struct Mapa {
+    int ancho;
+    int alto;
+    vector<vector<int>> datos; // Estructura de datos para las casillas del mapa
+
+    // Constructor para inicializar un mapa con valores predeterminados
+    Mapa(int w, int h) : ancho(w), alto(h), datos(h, vector<int>(w, 0)) {
+        // Puedes inicializar los valores predeterminados según sea necesario
+    }
+};
+
+// Definir una estructura de datos para un chunk
+struct Chunk {
+
+    int posX;
+    int posY;
+    vector<vector<int>> data; // Estructura de datos para las casillas del chunk
+
+    // Constructor para inicializar un chunk con valores predeterminados
+    Chunk(int x, int y) : posX(x), posY(y), data(64, vector<int>(64, 0)) {
+        // Puedes inicializar los valores predeterminados según sea necesario
+    }
+
+};
+
+------------------------------------------------- proceso de construccion del mapa
+
+
+1.- se obtienen las medidas de la pantalla del dispositivo , ancho -- alto
+
+2.-  
+
+
+
